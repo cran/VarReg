@@ -42,5 +42,5 @@ A list of the results from the EM algorithm, including:
  }
 }
 \description{
-\code{censloop_em} is a EM loop function for censored data to be utilised by various other higher level functions.
+\code{censloop_em} is an EM loop function for censored data to be utilised by various other higher level functions.
 }

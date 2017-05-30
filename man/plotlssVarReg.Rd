@@ -34,7 +34,6 @@ The dataframe returned contains the following columns:
 \item \code{eta}:  (\eqn{\eta}), the location parameter
 \item \code{omega}: (\eqn{\omega}), the scale parameter
 \item \code{shape}: (\eqn{\nu}),  the shape parameter
-\item \code{delta}: (\eqn{\delta}),  a component in the calculations
 \item \code{predicted~mean}: (\eqn{\mu}), the mean
 \item \code{predicted~variance}: (\eqn{\sigma^2}),  the variance
 \item \code{predicted~skewness}: (\eqn{\gamma}),  the skew
@@ -42,8 +41,8 @@ The dataframe returned contains the following columns:
 }
 }
 \description{
-\code{plotlssVarReg} to produce graphics for models fit in the \code{VarReg} package with the
- \code{lssVarReg} function. As the skew-normal function is used to fit this type of model, the data needs
+\code{plotlssVarReg} is used to produce graphics for models fit in the \code{VarReg} package with the
+ \code{lssVarReg} function. As the skew-normal distribution is used to fit this type of model, the data needs
  to be transformed from the SN parameters (location, scale and shape) to the typical mean,
  variance and skew parameters.
 }
@@ -51,8 +50,8 @@ The dataframe returned contains the following columns:
 data(mcycle)
 ## not run. LSS model followed by the basic plot command
 ##lssmodel<-lssVarReg(mcycle$accel, mcycle$times,  locationmodel="linear", scale2model="linear",
-##constantmodel="constant", maxit=10000)
-##plotlssVarReg(linmodel, xlab="Time in seconds", ylab="Acceleration")
+##shapemodel="constant", maxit=10000)
+##lssplot_out<-plotlssVarReg(lssmodel, xlab="Time in seconds", ylab="Acceleration")
 }
 \seealso{
 \code{\link{lssVarReg}}

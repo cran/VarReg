@@ -1,6 +1,6 @@
 #' The Censored data EM loop
 #'
-#' \code{censloop_em} is a EM loop function for censored data to be utilised by various other higher level functions.
+#' \code{censloop_em} is an EM loop function for censored data to be utilised by various other higher level functions.
 #' @param meanmodel Dataframe containing only the covariates to be fit in the mean model. NULL for zero mean model and FALSE for constant mean model.
 #' @param theta.old Vector containing the initial variance parameter estimates to be fit in the variance model.
 #' @param beta.old Vector containing the initial mean parameter estimates to be fit in the mean model.

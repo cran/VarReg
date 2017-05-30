@@ -7,7 +7,7 @@
 criterion(n, loglik, param)
 }
 \arguments{
-\item{n}{Number of observations in model}
+\item{n}{Number of observations}
 
 \item{loglik}{Loglikelihood from model}
 

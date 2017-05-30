@@ -1,7 +1,7 @@
 #' Calculation of information criterion
 #'
 #' \code{criterion} calculates various information criterion for the algorithms in this package
-#' @param n Number of observations in model
+#' @param n Number of observations
 #' @param loglik Loglikelihood from model
 #' @param param Number of parameters fit in model
 #' @return A list of the four IC

@@ -9,7 +9,7 @@ VarReg.control(bound.tol = 1e-05, epsilon = 1e-06, maxit = 1000)
 \arguments{
 \item{bound.tol}{Positive tolerance for specifying the interior of the parameter space. This allows the algorithm to terminate early if an interior maximum is found. If set to \code{bound.tol=Inf}, no early termination is attempted.}
 
-\item{epsilon}{Positive convergence tolerance. If \eqn{\theta} is a vector of estimates, convergence is assumed when \eqn{\sqrt{(\sum (\theta^{old} - \theta_{new})^2)}\sqrt{\sum (\theta_{old})^2} }. This should be smaller than \code{bound.tol}.}
+\item{epsilon}{Positive convergence tolerance. If \eqn{\theta} is a vector of estimates, convergence is declared when \eqn{\sqrt{(\sum (\theta_{old} - \theta_{new})^2)}/ \sqrt{\sum (\theta_{old})^2} }. This should be smaller than \code{bound.tol}.}
 
 \item{maxit}{integer giving the maximum number of EM algorithm iterations for a given parameterisation.}
 }

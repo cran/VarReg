@@ -17,7 +17,6 @@ dataframe containing:
 \item\code{eta}: \eqn{\eta} or fitted location estimates
 \item\code{omega}: \eqn{\omega} or fitted scale estimates
 \item\code{shape}: \eqn{\alpha} or fitted shape estimates
-\item\code{delta}: \eqn{\delta} or fitted delta estimates
  \item\code{predicted mean}: fitted mean estimates
  \item\code{predicted variance}: fitted variance estimates
  \item\code{Predicted skewness}: fitted skewness estimates

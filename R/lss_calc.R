@@ -9,7 +9,6 @@
 #' \item\code{eta}: \eqn{\eta} or fitted location estimates
 #' \item\code{omega}: \eqn{\omega} or fitted scale estimates
 #' \item\code{shape}: \eqn{\alpha} or fitted shape estimates
-#' \item\code{delta}: \eqn{\delta} or fitted delta estimates
 #'  \item\code{predicted mean}: fitted mean estimates
 #'  \item\code{predicted variance}: fitted variance estimates
 #'  \item\code{Predicted skewness}: fitted skewness estimates
@@ -51,7 +50,7 @@ lss_calc<-function(x){
   skewness<-((4-pi)/2)*((delta*sqrt(2/pi))**3/((1-(2*delta**2)/pi)**(3/2)))
   stand.res2<- (x$data[,1]-eta)**2/(omega)**2
 
-  out<-data.frame(x$data[,1], x$data[,3], eta,omega,shape,delta, pred.mean, pred.var, skewness, stand.res2)
-  colnames(out)<-c(colnames(x$data)[1], colnames(x$data)[3], "eta", "omega", "shape","delta", "Predicted mean", "Predicted variance", "Predicted skewness", "stand.res2")
+  out<-data.frame(x$data[,1], x$data[,3], eta,omega,shape, pred.mean, pred.var, skewness, stand.res2)
+  colnames(out)<-c(colnames(x$data)[1], colnames(x$data)[3], "eta", "omega", "shape", "Predicted mean", "Predicted variance", "Predicted skewness", "stand.res2")
   return(out)
 }

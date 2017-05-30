@@ -17,20 +17,20 @@
 #' @return The result is a list of results. This includes:
 #' \itemize{
 #' \item \code{mean.est}: dataframe of overall results from the mean model, including parameter estimates
-#' from the model, SEs from information matrix (if \code{boundary=FALSE}) and if specified, the se
+#' from the model, SEs from information matrix (if \code{boundary=FALSE}) and if specified, the SE
 #' from bootstrapping with the bootstrapped 95\% CI.
 #' \item \code{variance.est}: dataframe of overall results from the variance model, including parameter
 #'  estimates from the model, SEs from information matrix (if \code{boundary=FALSE}) and if specified,
-#'  the se from bootstrapping with the bootstrapped 95\% CI.
+#'  the SE from bootstrapping with the bootstrapped 95\% CI.
 #' \item \code{mean.im}: dataframe of the expected information matrices for the mean (as appropriate)
 #' \item \code{variance.im}: dataframe of the expected information matrices for the variance
 #' (as appropriate)
 #' \item \code{mean.outputs}: dataframe with complete output for mean graphics. Includes the
-#' \code{vector.mean} as input, and the mean vector (\code{mean.mean}) and the se vector {mean.se.im},
-#' and bootstrapping outputs as appropriate.
+#' \code{vector.mean} as input, and the mean vector (\code{mean.mean}) and the SE vector
+#' \code{mean.se.im}, and bootstrapping outputs as appropriate.
 #' \item \code{variance.outputs}: dataframe with complete output for variance graphics. Includes the
-#' \code{vector.variance} as input, and the mean vector (\code{var.mean}) and the se vector
-#' {var.se.im}, and bootstrapping outputs as appropriate.
+#' \code{vector.variance} as input, and the mean vector (\code{var.mean}) and the SE vector
+#' \code{var.se.im}, and bootstrapping outputs as appropriate.
 #' }
 #'@seealso
 #'\code{\link{semiVarReg}}, \code{\link{VarReg.control}}

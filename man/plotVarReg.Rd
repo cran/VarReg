@@ -45,7 +45,7 @@ without the knot lines indicated
  (given in black) with their censoring indicator to the chi-squared distribution with one
  degree of freedom (given in red). This is one of the plots given for censored data, and the
  other is a plot of the data, coloured by the censoring status. The triangles with the point at
- the top are bottom censored and the triangles withe the point at the bottom are top censored.
+ the top are bottom censored and the triangles with the point at the bottom are top censored.
 }
 \description{
 \code{plotVarReg} to produce graphics for models fit in this package.
