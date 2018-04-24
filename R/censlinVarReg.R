@@ -152,7 +152,6 @@ censlinVarReg<-function(dat, mean.ind=c(2), var.ind=c(2), cens.ind=c(3), mean.in
     if (is.na(reldiff.final)==TRUE){
       fit<- list(converged=conv.final,iterations=it.final,reldiff=reldiff.final, loglik=ll.final, boundary=NULL, aic.c=NULL, aic=NULL,bic=NULL,hqc=NULL,mean.ind=mean.ind,mean=NULL,var.ind=var.ind, variance=NULL,cens.ind=cens.ind, data=dat)
       return(fit)
-      break
     }
 
    if (var.ind[1]!=FALSE){
